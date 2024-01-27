@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
             title: const Text(
               "Instagram",
               style: TextStyle(
-                fontFamily: 'CookeiRegular',
+                // fontFamily: 'CookeiRegular',
                 color: Colors.black,
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
