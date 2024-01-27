@@ -1,6 +1,6 @@
-# flutter_instagram_ui_design
+# Flutter instagram UI design
 
-A new Flutter project.
+A Flutter project on creating an UI based on Instagram for practice purpose.
 
 ## Getting Started
 
