@@ -131,24 +131,61 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
 //feed
-                const Column(
+                Column(
                   children: [
-                    ClipRRect(
-                      // borderRadius: BorderRadius.circular(50),
-                      child: Image(
-                        image: AssetImage('assets/user_profile_image.jpg'),
-                        // height: 50,
-                        // width: 50,
+                    Container(
+                      height: 70,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(50),
+                              child: const Image(
+                                image: AssetImage('assets/user_profile.png'),
+                                height: 40,
+                                width: 40,
+                              ),
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "rafay2004",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     ClipRRect(
-                      // borderRadius: BorderRadius.circular(50),
+                      // borderRadius: BorderRadius.circular(20),
                       child: Image(
-                        image: AssetImage('assets/user_profile_image.jpg'),
-                        // height: 50,
-                        // width: 50,
+                        image:
+                            const AssetImage('assets/user_profile_image.jpg'),
+                        // fit: BoxFit.cover,
+                        // height: 300,
+                        // width: MediaQuery.of(context).size.width * 0.4,
                       ),
                     ),
+
+                    // ClipRRect(
+                    //   // borderRadius: BorderRadius.circular(50),
+                    //   child: Image(
+                    //     image: AssetImage('assets/user_profile_image.jpg'),
+                    //     // height: 50,
+                    //     // width: 50,
+                    //   ),
+                    // ),
+                    // ClipRRect(
+                    //   // borderRadius: BorderRadius.circular(50),
+                    //   child: Image(
+                    //     image: AssetImage('assets/user_profile_image.jpg'),
+                    //     // height: 50,
+                    //     // width: 50,
+                    //   ),
+                    // ),
                   ],
                 )
 
