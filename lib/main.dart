@@ -48,25 +48,111 @@ class MyApp extends StatelessWidget {
               // Icon(Icons.mark_chat_unread_outlined),
             ],
           ),
-          body: Container(
-            color: Colors.grey[100],
+//middle scroll section
+          body: SingleChildScrollView(
+            // color: Colors.grey[100],
+            scrollDirection: Axis.vertical,
             child: Column(
               children: [
                 //stories (row)
-                Row(
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  // padding: EdgeInsets,
+                  // color: Colors.white,
+                  // height: 80,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(100),
+                        child: const Image(
+                          image: AssetImage('assets/user_profile.png'),
+                          height: 70,
+                          width: 70,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+//feed
+                const Column(
                   children: [
                     ClipRRect(
-                      borderRadius: BorderRadius.circular(50),
-                      child: const Image(
+                      // borderRadius: BorderRadius.circular(50),
+                      child: Image(
                         image: AssetImage('assets/user_profile_image.jpg'),
-                        height: 50,
-                        width: 50,
+                        // height: 50,
+                        // width: 50,
                       ),
-                    )
+                    ),
+                    ClipRRect(
+                      // borderRadius: BorderRadius.circular(50),
+                      child: Image(
+                        image: AssetImage('assets/user_profile_image.jpg'),
+                        // height: 50,
+                        // width: 50,
+                      ),
+                    ),
                   ],
                 )
-                //feed
-                //bottom menubar
+
+//bottom menubar
               ],
             ),
           ),
