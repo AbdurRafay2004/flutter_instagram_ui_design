@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
             title: const Text(
               "Instagram",
               style: TextStyle(
-                // fontFamily: 'CookeiRegular',
+                // fontFamily: 'Cookei',
                 color: Colors.black,
                 fontSize: 30,
                 fontWeight: FontWeight.w700,
@@ -50,9 +50,21 @@ class MyApp extends StatelessWidget {
           ),
           body: Container(
             color: Colors.grey[100],
-            child: const Column(
+            child: Column(
               children: [
                 //stories (row)
+                Row(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: const Image(
+                        image: AssetImage('assets/user_profile_image.jpg'),
+                        height: 50,
+                        width: 50,
+                      ),
+                    )
+                  ],
+                )
                 //feed
                 //bottom menubar
               ],
